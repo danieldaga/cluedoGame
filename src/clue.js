@@ -132,5 +132,7 @@ function pickMystery() {}
 
 // ITERATION 3
 
-function revealMystery() {}
+function revealMystery() {
+    return `${this.firstName} ${this.lastname} killed Mr. Boddy using the ${weaponsArray.name} in the ${roomsArray.name}!`
+}
 
