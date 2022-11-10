@@ -9,8 +9,8 @@ const suspectsArray = [
         occupation: 'Entrepreneur',
         age: 45,
         description: 'He has a lot of connections',
-        image: 'https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg'
-        color: 'green',
+        image: 'https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg',
+        color: 'green'
     },
     {
         firstName: 'Doctor',
@@ -52,8 +52,8 @@ const suspectsArray = [
         firstName: 'Jack',
         lastName: 'Mustard',
         occupation: 'Retired Football player',
-        age: 62
-description: 'He is a former football player who tries to get by on his former glory',
+        age: 62,
+        description: 'He is a former football player who tries to get by on his former glory',
         image: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/04/08/unspecified-3.jpg',
         color: 'yellow'
     }
@@ -102,21 +102,21 @@ const weaponsArray = [
 // Rooms Array
 
 const roomsArray = [
-    {name: Dining Room}
-{name: 'Conservatory'}
-{name: 'Kitchen'}
-{name: 'Study'}
-{name: 'Library'}
-{name: 'Billiard Room'}
-{name: 'Lounge'}
-{name: 'Ballroom'}
-{name: 'Hall'}
-{name: 'Spa'}
-{name: 'Living Room'}
-{name: 'Observatory'}
-{name: 'Theater'}
-{name: 'Patio'}
-{name: 'Guest House'}
+    { name: 'Dining Room' },
+    { name: 'Conservatory' },
+    { name: 'Kitchen' },
+    { name: 'Study' },
+    { name: 'Library' },
+    { name: 'Billiard Room' },
+    { name: 'Lounge' },
+    { name: 'Ballroom' },
+    { name: 'Hall' },
+    { name: 'Spa' },
+    { name: 'Living Room' },
+    { name: 'Observatory' },
+    { name: 'Theater' },
+    { name: 'Patio' },
+    { name: 'Guest House' },
 
 ];
 
