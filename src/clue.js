@@ -1,61 +1,61 @@
-    // ITERATION 1
+// ITERATION 1
 
 // Suspects Array
 
 const suspectsArray = [
     {
-        firstName: 'dani',
-        lastName: 'García',
-        occupation: 'frontend developer',
-        age: 29,
-        description:'asd',
-        image: 'img',
-        color: 'black'
+        firstName: 'Jacob',
+        lastName: 'Green',
+        occupation: 'Entrepreneur',
+        age: 45,
+        description: 'He has a lot of connections',
+        image: 'https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg'
+        color: 'green',
+    },
+    {
+        firstName: 'Doctor',
+        lastName: 'Orchid',
+        occupation: 'Scientist',
+        age: 26,
+        description: 'PhD in plant toxicology. Adopted daughter of Mr. Boddy',
+        image: 'http://www.radiotimes.com/uploads/images/Original/111967.jpg',
+        color: 'white'
+    },
+    {
+        firstName: 'Victor',
+        lastName: 'Plum',
+        occupation: 'Designer',
+        age: 22,
+        description: 'Billionaire video game designer',
+        image: 'https://66.media.tumblr.com/ee7155882178f73b3781603f0908617c/tumblr_phhxc7EhPJ1w5fh03_540.jpg',
+        color: 'purple'
+    },
+    {
+        firstName: 'Kasandra',
+        lastName: 'Scarlet',
+        occupation: 'Actor',
+        age: 31,
+        description: 'She is an A-list movie star with a dark past',
+        image: 'https://www.radiotimes.com/uploads/images/Original/111967.jpg',
+        color: 'red'
     },
     {
         firstName: 'dani',
         lastName: 'García',
         occupation: 'frontend developer',
         age: 29,
-        description:'asd',
+        description: 'asd',
         image: 'img',
         color: 'black'
     },
     {
-        firstName: 'dani',
-        lastName: 'García',
-        occupation: 'frontend developer',
-        age: 29,
-        description:'asd',
-        image: 'img',
-        color: 'black'
-    },
-    {
-        firstName: 'dani',
-        lastName: 'García',
-        occupation: 'frontend developer',
-        age: 29,
-        description:'asd',
-        image: 'img',
-        color: 'black'
-    },
-    {
-        firstName: 'dani',
-        lastName: 'García',
-        occupation: 'frontend developer',
-        age: 29,
-        description:'asd',
-        image: 'img',
-        color: 'black'
-    },
-    {
-        firstName: 'dani',
-        lastName: 'García',
-        occupation: 'frontend developer',
-        age: 29,
-        description:'asd',
-        image: 'img',
-        color: 'black'
+        firstName: 'Jack',
+        lastName: 'Mustard',
+        occupation: 'Retired Football player',
+        age: 62
+description: 'He is a former football player who tries to get by on his former glory',
+        image: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/04/08/unspecified-3.jpg',
+        color: 'yellow'
     }
 ];
 
@@ -63,38 +63,38 @@ const suspectsArray = [
 
 const weaponsArray = [
     {
-        name: 'salom',
+        name: 'rope',
         weight: 30
     },
     {
-        name: 'salom',
-        weight: 30
-    }, 
-    {
-        name: 'salom',
+        name: 'knife',
         weight: 30
     },
     {
-        name: 'salom',
+        name: 'candlestick',
         weight: 30
     },
     {
-        name: 'salom',
+        name: 'dumbbell',
         weight: 30
     },
     {
-        name: 'salom',
+        name: 'poison',
+        weight: 30
+    },
+    {
+        name: 'axe',
         weight: 30
     }, {
-        name: 'salom',
+        name: 'bat',
         weight: 30
     },
     {
-        name: 'salom',
+        name: 'trophy',
         weight: 30
     }, {
-        name: 'salom',
-        weight: 30
+        name: 'pistol',
+        weight: 3
     }
 
 ];
@@ -102,21 +102,21 @@ const weaponsArray = [
 // Rooms Array
 
 const roomsArray = [
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'salom'},
-    {name: 'bedroom'}
+    {name: Dining Room}
+{name: 'Conservatory'}
+{name: 'Kitchen'}
+{name: 'Study'}
+{name: 'Library'}
+{name: 'Billiard Room'}
+{name: 'Lounge'}
+{name: 'Ballroom'}
+{name: 'Hall'}
+{name: 'Spa'}
+{name: 'Living Room'}
+{name: 'Observatory'}
+{name: 'Theater'}
+{name: 'Patio'}
+{name: 'Guest House'}
 
 ];
 
@@ -124,7 +124,7 @@ const roomsArray = [
 // ITERATION 2
 
 function selectRandom(arr) {
-    return arr[Math.floor(Math.random()*arr.length)]
+    return arr[Math.floor(Math.random() * arr.length)]
 }
 
 function pickMystery() {
@@ -132,12 +132,12 @@ function pickMystery() {
     let weapon = selectRandom(weaponsArray)
     let room = selectRandom(roomsArray)
 
-    return {suspect, weapon, room}
+    return { suspect, weapon, room }
 }
 
 
 // ITERATION 3
 
-function revealMystery({suspect,weapon,room}) {
+function revealMystery({ suspect, weapon, room }) {
     return `${suspect.firstName} ${suspect.lastName} killed Mr. Boddy using the ${weapon.name} in the ${room.name}!`
 }
